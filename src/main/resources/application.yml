@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: demo-rag
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/vector_db
+#    username: postgres
+#    password: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+  ai:
+    ollama:
+      base-url: http://localhost:11434/
+      chat:
+        options:
+          model: llama3-chatqa
+      embedding:
+        options:
+          model: llama3-chatqa
